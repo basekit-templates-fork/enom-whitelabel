@@ -1,6 +1,2 @@
-Copyright 2014 BaseKit Platform Ltd
-
-baseplate
+Enom Whitelabel
 =========
-
-BaseKit Baseplate Template

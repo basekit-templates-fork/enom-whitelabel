@@ -1,62 +1,223 @@
-// BaseKit Baseplate Template (v1.0)
-
-// Copyright 2014 BaseKit Platform Ltd
 
 // -----------------------------
-// #Table of Contents
-// -----------------------------
-
-// 1. #LESS INCLUDES
-// 2. #PAGE SETTINGS
-// 3. #TEMPLATE STYLES
-
-
-// -----------------------------
-// 1. #LESS Includes
+// Mixins, Includes & Media Queries
 // -----------------------------
 
 @import "@{templateLocal}/css/reset.less"; // CSS Reset
-// @import "@{templateCommon}/basekit-bootstrap.less"; // BaseKit Bootstrap **
 
-// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into your template
-// to guarentee widgets come to life. Proivides default styles for all widgets. Uncomment to activate.
+@mobile: ~"only screen and (max-width: 650px)";
 
+@blue: rgb(60,66,75);
+@royal-blue: rgb(17, 61, 131);
+@white: rgb(255,255,255);
+@grey: rgb(250,250,250);
+@red: rgb(240,74,74);
 
+.border-radius (@radius: 4px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transition (@prop: all, @time: 0.5s, @ease: ease) {
+	-webkit-transition: @prop @time @ease;  
+	-moz-transition:    @prop @time @ease;
+	-ms-transition:     @prop @time @ease; 
+	-o-transition:      @prop @time @ease;  
+}
 
 
 // -----------------------------
-// 2. #Page Settings **
+// Page Settings 
 // -----------------------------
 
-// ** Styles for Baseplate template - remove when developing a custom template
 
 body {
-	background-color: #fff;
-	color: #333;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 15px;
-	line-height: 28px;
+	background-color: @grey);
+	line-height: 1.5;
+	 -webkit-font-smoothing: antialiased;
 }
 
 // Page Container
+
 .container {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 100px 0 0;
+	padding: 80px 0 0;
+	@media @mobile {
+		padding: 40px 0 0;
+	}
 }
 
 // Main Zone
+
 .main-zone {
 	margin: 40px 0;
 }
 
 
 
-
 // -----------------------------
-// 3. #Template Styles
+// Template Styles
 // -----------------------------
 
 
+// Type
+
+h1, h2 {
+	color: @blue;
+	font-family: @font-swatch1-font-family;
+	font-weight: @font-swatch1-font-weight;
+}
+
+h1 {
+	font-size: @font-swatch1-font-size;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-size: @font-swatch2-font-size;
+	margin-bottom: 20px;
+}
+
+
+// Forms
+
+.resetpassword, .forgottenpassword, .userlogin {
+	background: @white;
+	border: 1px solid rgba(200,200,200, 0.55);
+	.border-radius(4px 4px 0 0);
+	margin: 40px auto 0;
+	padding: 30px;
+	max-width: 400px;
+	text-align: center;
+}
+
+.userlogin {
+	border-top: 1px solid rgba(200,200,200, 0.55);
+	border-left: 1px solid rgba(200,200,200, 0.55);
+	border-right: 1px solid rgba(200,200,200, 0.55);
+	border-bottom: none;
+}
+
+.resetpassword {
+	form {
+		position: relative;
+	}
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+
+	label {
+		display: none;
+	}
+
+	input {
+		border: 1px solid rgba(225,225,225, 1);
+		.border-radius(4px);
+		color: #838383;
+		display: block;
+		font-family: "Lato", Geneva, Tahoma, sans-serif;
+		font-size: 16px;
+		margin-bottom: 15px;
+		margin-right: 0.6em;
+		padding: 0 1em;
+		height: 55px;
+		line-height: 55px;
+		text-indent: 0;
+		.transition(all, .5s, ease-out);
+		width: 100%;
+		&:focus, &:hover {
+			background-color: rgb(250,250,250);
+			border: 1px solid rgba(230,230,230, 1);
+			color: rgb(60,60,60);
+			outline: none;
+		}
+	}
+
+	button {
+		background-color: @royal-blue;
+		border: none;
+		.border-radius(4px);
+		color: white;
+		font-size: @font-swatch7-font-size;
+		font-weight: @font-swatch1-font-weight;
+		letter-spacing: 2px;
+		margin-top: 8px;
+		padding: 16px 20px;
+		text-transform: uppercase;
+		.transition(all, .5s, ease-out);
+		width: 100%;
+		&:hover {
+			background-color: darken(@royal-blue, 10%);
+		}
+		&.password-mask-toggle {
+			background-color: lighten(@blue, 50%);
+			position: absolute;
+			top: 7px;
+			right: 12px;
+			max-width: 65px;
+			font-size: 8px;
+			padding: 6px 12px 4px;
+			line-height: 16px;
+			.transition(.5s, all, ease-out);
+			&:hover {
+				background-color: lighten(@blue, 20%);
+			}
+		}
+	}
+	.error {
+		color: darken(@red, 10%);
+		font-size: 13px;
+		font-weight: 500;
+		&:before {
+			border: 2px solid lighten(@red, 20%);
+			border-radius: 50px;
+			color: lighten(@red, 5%);
+			content: "!";
+			display: inline-block;
+			font-size: 10px;
+			font-weight: 800;
+			line-height: 15px;
+			margin-right: 6px;
+			position: relative;
+			height: 16px;
+			width: 16px;
+			vertical-align: bottom;
+		}
+	}
+}
+
+.forgot-password {
+	background: rgba(245,245,245, 1);
+	.border-radius(0 0 4px 4px);
+	border: 1px solid rgba(200,200,200, 0.55);
+	border-top: 1px solid rgba(200,200,200, 0.25);
+	color: white;
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 19px 30px;
+
+	-webkit-box-shadow: inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	-moz-box-shadow:    inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	box-shadow:         inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	text-align: center;
+	h6 {
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 400;
+		margin: 0;
+		width: 45%;
+	}
+	a {
+		color: rgb(165,165,165);
+		.transition(all, .5s, ease-out);
+		&:hover {
+			color: darken(rgb(165,165,165), 20%);
+		}
+	}
+}

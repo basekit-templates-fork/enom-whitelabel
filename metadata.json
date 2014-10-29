@@ -1,46 +1,46 @@
 {
-    "name": "basekit-baseplate",
+    "name": "enom whitelabel",
     "thumbnail": "thumbnail.png",
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#3295e1",
+            "color1":"#fafafa",
+            "color2":"#113d83",
             "color3":"#444444",
-            "color4":"#333333",
-            "color5":"#333333",
+            "color4":"#3c4248",
+            "color5":"#787b7e",
             "color6":"#333333",
-            "color7":"#000000"
+            "color7":"#ffffff"
         }
     },
     "fontSwatch": {
-       "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
+       "title": "Open Sans",
         "font1": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "28px",
-            "font-weight": "700",
-            "line-height": "inherit",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "30px",
+            "font-weight": "600",
+            "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "22px",
-            "font-weight": "700",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
             "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "20px",
             "font-weight": "700",
-            "line-height": "inherit",
+            "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "18px",
             "font-weight": "700",
             "line-height": "inherit",
@@ -48,7 +48,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "15px",
             "font-weight": "inherit",
             "line-height": "28px",
@@ -56,7 +56,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "16px",
             "font-weight": "inherit",
             "line-height": "inherit",
@@ -65,8 +65,8 @@
             "letter-spacing": "inherit"
          },
         "font7": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "16px",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "12px",
             "font-weight": "inherit",
             "line-height": "inherit",
             "color": "@color-swatch1",
@@ -75,7 +75,7 @@
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "34px",
             "font-weight": "700",
             "line-height": "inherit",
@@ -83,7 +83,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "20px",
             "font-weight": "inherit",
             "line-height": "inherit",
@@ -91,7 +91,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "28px",
             "font-weight": "700",
             "line-height": "inherit",
