@@ -11,6 +11,42 @@
             "color5":"#787b7e",
             "color6":"#333333",
             "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#e8e6e0",
+            "color2":"#b8860b",
+            "color3":"#dad8d4",
+            "color4":"#141414",
+            "color5":"#4b4b4b",
+            "color6":"#ffffff",           
+            "color7":"#778899"
+        },
+        "Swatch 3": {
+            "color1":"#e8e6e0",
+            "color2":"#4682B4",
+            "color3":"#dad8d4",
+            "color4":"#141414",
+            "color5":"#4b4b4b",
+            "color6":"#ffffff",
+            "color7":"#4b4b4b"
+        },
+        "Swatch 4": {
+            "color1":"#e8e6e0",
+            "color2":"#C19F74",
+            "color3":"#dad8d4",
+            "color4":"#141414",
+            "color5":"#4b4b4b",
+            "color6":"#ffffff",
+            "color7":"#222F38"
+        },
+        "Swatch 5": {
+            "color1":"#e8e6e0",
+            "color2":"#81725D",
+            "color3":"#dad8d4",
+            "color4":"#141414",
+            "color5":"#4b4b4b",
+            "color6":"#ffffff",
+            "color7":"#76948a"
         }
     },
     "fontSwatch": {
@@ -62,7 +98,9 @@
             "line-height": "inherit",
             "color": "@color-swatch6",
             "color-hover": "@color-swatch7",
-            "letter-spacing": "inherit"
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch6",
+            "background-color-hover": "transparent"
          },
         "font7": {
             "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
@@ -72,7 +110,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
-            "background-color-hover": "darken(@color-swatch3,10%)"
+            "background-color-hover": "@color-swatch3"
         },
         "font8": {
             "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",

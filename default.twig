@@ -27,6 +27,7 @@
 
 	{% include basekit.headScript %}
 </head>
+
 <body class="{{ page.backgroundClass }}">
 
 	<!-- Container -->
@@ -35,63 +36,9 @@
 		<!-- Page Content -->
 		<section class="content">
 
-		    {{widget('content', 'title', {content: '<h1>Please contact your service provider.</h1>'})|raw}}
-
-			    <div id="page-zones__template-widgets__userlogin-userlogin1" class="widget userlogin ">
-				  <form action="" method="post" novalidate="">
-				    <fieldset>
-				        <label for="email">Email:</label>
-				        <input type="email" class="email" value="" maxlength="255" placeholder="Your Email">
-				        <p class="error email hidden"><!-- email errors --></p>
-
-				        <label for="password">Password:</label>
-				        <input type="password" class="password" value="" maxlength="255" placeholder="Enter Password">
-				         <p class="error password hidden"><!-- password errors --></p>
-
-				        <button class="userloginbtn btnText   " type="submit">LOGIN</button>
-				        <p class="error submission hidden"><!-- error message --></p>
-				    </fieldset>
-				</form>
-
-				<div class="overlay">
-					    <div class="inner">
-					        <div class="message"></div>
-					    </div>
-					</div>
-				</div>
-
-
-		    <div class="forgot-password">
-				<h6><a href="/forgot-password">Forgot your password?</a></h6>
-			</div><!--end forgot password-->
-
-			<div id="page-zones__main-widgets__resetpassword" class="widget resetpassword">
-			    <form>
-				    <fieldset>
-				        <label for="password" class="label">Choose your new password</label>
-				        <input class="password" type="password">
-				        <button class="password-mask-toggle" type="button" aria-controls="password">Show</button>
-				        <button class="btn btnText  " type="submit">Save</button>
-				    </fieldset>
-				</form>
-			</div>
-
-			<div id="page-zones__main-widgets__forgottenpassword" class="widget forgottenpassword">
-			    <form>
-				    <fieldset>
-				        <label for="email" class="label">Email:</label>
-				        <input type="email" class="email" placeholder="Type your Email">
-				        <button class="btn btnText  " type="submit">Send</button>
-				    </fieldset>
-				</form>
-			</div>
-
 			<!-- Main Widget Zone -->
 			<section class="main-zone">
-
-				<!-- Uncomment zone to display widgets -->
-				{# {{zone('main')|raw}} #}
-
+				{{zone('main')|raw}}
 			</section>
 
 		</section>
