@@ -121,6 +121,34 @@ h2 {
 	border-bottom: none;
 }
 
+.userlogin + .widget.content {
+	background: rgba(245,245,245, 1);
+	.border-radius(0 0 4px 4px);
+	border: 1px solid rgba(200,200,200, 0.55);
+	border-top: 1px solid rgba(200,200,200, 0.25);
+	color: white;
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 5px 30px;
+
+	-webkit-box-shadow: inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	-moz-box-shadow:    inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	box-shadow:         inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
+	text-align: center;
+	a {
+		display: inline-block;
+		font-size: 13px;
+		font-weight: 400;
+		margin: 0;
+		width: 45%;
+		color: rgb(165,165,165);
+		.transition(all, .5s, ease-out);
+		&:hover {
+			color: darken(rgb(165,165,165), 20%);
+		}
+	}
+}
+
 .resetpassword {
 	form {
 		position: relative;
@@ -222,36 +250,6 @@ fieldset {
 			height: 16px;
 			width: 16px;
 			vertical-align: bottom;
-		}
-	}
-}
-
-.forgot-password {
-	background: rgba(245,245,245, 1);
-	.border-radius(0 0 4px 4px);
-	border: 1px solid rgba(200,200,200, 0.55);
-	border-top: 1px solid rgba(200,200,200, 0.25);
-	color: white;
-	margin: 0 auto;
-	max-width: 400px;
-	padding: 19px 30px;
-
-	-webkit-box-shadow: inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
-	-moz-box-shadow:    inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
-	box-shadow:         inset 0px 4px 8px 0px rgba(50, 50, 50, 0.04);
-	text-align: center;
-	h6 {
-		display: inline-block;
-		font-size: 12px;
-		font-weight: 400;
-		margin: 0;
-		width: 45%;
-	}
-	a {
-		color: rgb(165,165,165);
-		.transition(all, .5s, ease-out);
-		&:hover {
-			color: darken(rgb(165,165,165), 20%);
 		}
 	}
 }
